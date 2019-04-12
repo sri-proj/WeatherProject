@@ -19,7 +19,7 @@ public class SpringBootCtsWeatherApplication {
 	@Bean
 	CommandLineRunner runner(WeatherService weatherService) {
 		return args -> {
-			weatherService.save(new GetWeatherResponse(1,"NJ", "Jersey City", "45"));
+			weatherService.save(new GetWeatherResponse(1,"NJ", "Jersey City", "45", "40"));
 		};
 	}
 

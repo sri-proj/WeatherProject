@@ -12,16 +12,34 @@ public class GetWeatherResponse {
     private String state;
     private String city;
     private String temperature;
+    private String feels;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getFeels() {
+        return feels;
+    }
+
+    public void setFeels(String feels) {
+        this.feels = feels;
+    }
 
     public GetWeatherResponse(){
 
     }
 
-    public GetWeatherResponse(int id, String state, String city, String temperature) {
+    public GetWeatherResponse(int id, String state, String city, String temperature, String feels) {
         this.id = id;
         this.state = state;
         this.city = city;
         this.temperature = temperature;
+        this.feels = feels;
     }
 
     public String getState() {
