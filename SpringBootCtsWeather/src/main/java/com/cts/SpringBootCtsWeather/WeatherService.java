@@ -14,6 +14,10 @@ public class WeatherService {
     public GetWeatherResponse getWeatherReport(int id) {
         return weatherRepository.findById(id).get();
     }
+    
+    public Iterable<GetWeatherResponse> getAllWeatherReport() {
+        return weatherRepository.findAll();
+    }
 
     public GetWeatherResponse save(GetWeatherResponse weatherReportResponse) {
         return weatherRepository.save(weatherReportResponse);

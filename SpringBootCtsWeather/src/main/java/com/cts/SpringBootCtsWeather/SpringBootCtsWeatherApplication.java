@@ -20,6 +20,9 @@ public class SpringBootCtsWeatherApplication {
 	CommandLineRunner runner(WeatherService weatherService) {
 		return args -> {
 			weatherService.save(new GetWeatherResponse(1,"NJ", "Jersey City", "45", "40"));
+			weatherService.save(new GetWeatherResponse(1,"NJ", "Edison", "45", "40"));
+			weatherService.save(new GetWeatherResponse(2,"CA", "Edison", "45", "40"));
+			weatherService.save(new GetWeatherResponse(3,"NY", "Metropark", "45", "40"));
 		};
 	}
 
