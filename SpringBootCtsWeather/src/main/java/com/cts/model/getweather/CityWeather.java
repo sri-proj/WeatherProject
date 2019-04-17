@@ -12,7 +12,7 @@ public class CityWeather {
     private String feels;
 
     @ManyToOne
-    @JoinColumn(name="getWeatherResponse_id")
+    @JoinColumn(name = "get_weather_response_id")
     private GetWeatherResponse getWeatherResponse;
 
     public CityWeather(String city, String temperature, String feels) {

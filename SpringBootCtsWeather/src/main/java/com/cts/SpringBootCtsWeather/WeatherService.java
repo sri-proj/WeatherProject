@@ -28,6 +28,16 @@ public class WeatherService {
         return weatherResponses;
     }
 
+    public GetWeatherResponse getWeatherReportByState(String state) {
+        GetWeatherResponse getWeatherResponse = new GetWeatherResponse();
+        for (GetWeatherResponse getWeatherResponse1 : weatherRepository.findAll()) {
+            if (state.equalsIgnoreCase(getWeatherResponse1.getState())) {
+                return getWeatherResponse1;
+            }
+        }
+        return getWeatherResponse;
+    }
+
     public GetWeatherResponse save(GetWeatherResponse weatherReportResponse) {
         return weatherRepository.save(weatherReportResponse);
     }

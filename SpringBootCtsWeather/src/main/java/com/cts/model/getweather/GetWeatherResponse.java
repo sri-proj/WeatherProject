@@ -14,7 +14,9 @@ public class GetWeatherResponse {
     private int id;
     private String state;
 
-    @OneToMany(mappedBy = "getWeatherResponse", cascade = CascadeType.ALL)
+    //@OneToMany(mappedBy = "getWeatherResponse", cascade = CascadeType.ALL)
+    //@JoinColumn(referencedColumnName="id")
+    @OneToMany(cascade = CascadeType.ALL)
     private List<CityWeather> cities;
 
     public List<CityWeather> getCities() {
