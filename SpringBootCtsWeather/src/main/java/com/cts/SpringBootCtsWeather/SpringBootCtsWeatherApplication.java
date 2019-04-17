@@ -25,14 +25,14 @@ public class SpringBootCtsWeatherApplication {
 		return args -> {
 
 			List<CityWeather> cityWeatherList1 = new ArrayList<>();
-			CityWeather cityWeather1 = new CityWeather("Jersey City", "45", "40");
-			CityWeather cityWeather2 = new CityWeather("Edison", "45", "40");
+			CityWeather cityWeather1 = new CityWeather("Jersey City", "45", "46");
+			CityWeather cityWeather2 = new CityWeather("Edison", "51", "53");
 			cityWeatherList1.add(cityWeather1);
 			cityWeatherList1.add(cityWeather2);
 
 			List<CityWeather> cityWeatherList2 = new ArrayList<>();
-			CityWeather cityWeather3 = new CityWeather("Downtown", "45", "40");
-			CityWeather cityWeather4 = new CityWeather("Brooklyn", "45", "40");
+			CityWeather cityWeather3 = new CityWeather("Downtown", "60", "63");
+			CityWeather cityWeather4 = new CityWeather("Brooklyn", "71", "80");
 			cityWeatherList2.add(cityWeather3);
 			cityWeatherList2.add(cityWeather4);
 
