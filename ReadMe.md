@@ -11,8 +11,12 @@ This project demonstrates One-To-Many and Many-To-One relation between two entit
 1. Clean/Build in the IDE
 2. Run as SpringBoot App
 3. http://localhost:8080/weather should be up and running
+4. Additional data can be populated in the SpringBootCtsWeatherApplication file.
 
 ## RestFul Endpoints
+1. /weather would fetch weather result for all the states and cities under it
+2. /weather/<id> would fetch weather result for a state given its id
+3. /weather/state/<state> would fetch for a particular state. 
 
 ## Contributing
 Pull requests are welcome. 
