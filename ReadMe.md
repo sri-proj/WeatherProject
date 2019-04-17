@@ -15,8 +15,83 @@ This project demonstrates One-To-Many and Many-To-One relation between two entit
 
 ## RestFul Endpoints
 1. /weather would fetch weather result for all the states and cities under it
+```
+endpoint : http://localhost:8080/weather/
+[
+  {
+    "id": 1,
+    "state": "NJ",
+    "cities": [
+      {
+        "city": "Jersey City",
+        "temperature": "45",
+        "feels": "46"
+      },
+      {
+        "city": "Edison",
+        "temperature": "51",
+        "feels": "53"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "state": "NY",
+    "cities": [
+      {
+        "city": "Downtown",
+        "temperature": "60",
+        "feels": "63"
+      },
+      {
+        "city": "Brooklyn",
+        "temperature": "71",
+        "feels": "80"
+      }
+    ]
+  }
+]
+```
 2. /weather/<id> would fetch weather result for a state given its id
+```
+endpoint : http://localhost:8080/weather/1
+{
+  "id": 1,
+  "state": "NJ",
+  "cities": [
+    {
+      "city": "Jersey City",
+      "temperature": "45",
+      "feels": "46"
+    },
+    {
+      "city": "Edison",
+      "temperature": "51",
+      "feels": "53"
+    }
+  ]
+}
+```
 3. /weather/state/<state> would fetch for a particular state. 
+```
+endpoint : http://localhost:8080/weather/state/NJ
+{
+  "id": 1,
+  "state": "NJ",
+  "cities": [
+    {
+      "city": "Jersey City",
+      "temperature": "45",
+      "feels": "46"
+    },
+    {
+      "city": "Edison",
+      "temperature": "51",
+      "feels": "53"
+    }
+  ]
+}
+```
 
 ## Contributing
 Pull requests are welcome. 
